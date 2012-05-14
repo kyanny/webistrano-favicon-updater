@@ -1,0 +1,10 @@
+{
+    "version": "0.1",
+    "name": "webistrano favicon updater",
+    "content_scripts": [
+        {
+            "matches": ["http://*/projects/*/stages/*/deployments/*"],
+            "js": ["jquery.js", "webistrano-favicon-updater.user.js"]
+        }
+    ]
+}
